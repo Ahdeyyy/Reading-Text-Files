@@ -21,9 +21,9 @@ def read_file_content(filename):
     return text
 
 
-def count_words(text):
+def count_words():
     # [assignment] Add your code here
-    #text = read_file_content("./story.txt")
+    text = read_file_content("./story.txt")
     text = remove_symbols(text)
     text = text.lower()
     words = text.split()
@@ -36,4 +36,4 @@ def count_words(text):
     return dict
 
 #print(read_file_content("./story.txt"))
-print(count_words("The cake is done. It is a big cake!"))
+print(count_words())
